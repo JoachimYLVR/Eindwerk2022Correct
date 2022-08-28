@@ -1,0 +1,22 @@
+@use "./variables" as v;
+
+.ProjectsTable {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.ProjectsRibbon {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    z-index: 1;
+    position: relative;
+    button{
+        width: 200px;
+        margin-left: auto;
+    }
+    
+}

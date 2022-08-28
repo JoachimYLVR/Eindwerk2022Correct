@@ -1,0 +1,35 @@
+
+
+.about {
+    width: 80%;
+    padding-top: 80px;
+    margin: auto;
+    .story {
+        display: flex;
+        flex-direction: row;
+        .image {
+            width: 30%;
+            img {
+                object-fit: cover;
+                overflow: hidden;
+                box-shadow: 6px 6px 20px 12px rgba(0,0,0,0.2);
+                border-radius: 20px;
+            }
+        }
+        .text {
+            margin-left: 100px;
+            width: calc(70% - 100px);
+            padding: 30px 40px;
+            box-shadow: 6px 6px 20px 12px rgba(0,0,0,0.2);
+            border-radius: 20px;
+            h2 {
+                font-weight: 600;
+                font-size: 22px;
+            }
+            p {
+                font-weight: 400;
+                font-size: 16px;
+            }
+        }
+    }
+}

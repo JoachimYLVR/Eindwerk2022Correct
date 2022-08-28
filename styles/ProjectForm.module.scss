@@ -1,0 +1,62 @@
+@use "./variables" as v;
+
+.greyedOut {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    opacity: 30%;
+    background-color: v.$grey;
+    z-index: 99;
+}
+
+.projectForm {
+    z-index: 100;
+    position: fixed;
+    top: 150px;
+    left: 50%;
+    margin-left: -250px;
+    background-color: white;
+    border: 1px v.$blue;
+    border-radius: 15px;
+    box-shadow: 6px 6px 20px 12px rgba(0,0,0,0.2);
+    //height: 650px;
+    width: 500px;
+    padding: 30px 40px;
+    .title {
+        font-weight: 600;
+        font-size: 24px;
+        color: v.$blue;
+        padding-bottom: 10px;
+    }
+    .select {
+        label {
+            font-weight: 400;
+            font-size: 14px;
+            color: rgb(51, 51, 51);
+            margin-bottom: 12px;
+            padding-left: 6px;
+        }
+        select {
+            width: 100%;
+            font-weight: 400;
+            font-size: 14px;
+            color: rgb(118, 118, 118);
+            border: 2px solid #eaeaea;
+            border-radius: 12px;
+            height: 40px;
+            transition-timing-function: ease;
+            &:focus {
+                border: 2px solid black;
+            }
+        }
+    }
+    .cancel, .confirm {
+        position: absolute;
+        bottom: 40px;
+    }
+    .cancel {
+        left: 150px;
+    }
+}

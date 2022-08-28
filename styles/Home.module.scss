@@ -1,0 +1,66 @@
+@use "./variables" as v;
+
+
+
+.App {
+  display: flex;
+  justify-content: space-between;
+  .loginLeft {
+      width: 50%;
+      height: 100vh;
+      background-color: v.$blue;
+  }
+  .loginRight {
+      display: flex;
+      width: 50%;
+      height: 100vh;
+      background-color: white;
+      justify-content: center;
+      align-items: center;
+      .loginScreen {
+          position: relative;
+          font-weight: 400;
+          height: 600px;
+          width: 480px;
+          padding: 40px;
+          border-radius: 15px;
+          box-shadow: 6px 6px 20px 12px rgba(0,0,0,0.2);
+          align-self: center;
+          .loginBrand {
+              font-weight: 800;
+              font-size: 50px;
+              color: v.$blue;
+              padding-bottom: 50px;
+          }
+          .login-username, .login-password {
+              padding: 10px 0px;
+              color: v.$grey;
+              label, input {
+                  display: block;
+              }
+              label {
+                  font-size: 16px;
+                  padding-bottom: 5px;
+              }
+              input {
+                  height: 48px;
+                  width: 100%;
+                  border-radius: 8px;
+                  border: v.$grey 1px solid;
+                  padding-left: 8px;
+                  &::placeholder {
+                      font-size: 14px;
+                  }
+              };
+          }
+          .retrieve {
+              color: v.$grey;
+              padding: 10px 0px;
+          }
+          .loginButton {
+              position: absolute;
+              bottom: 40px;
+          }
+      }
+  }
+}

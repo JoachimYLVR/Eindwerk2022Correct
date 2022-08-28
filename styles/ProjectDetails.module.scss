@@ -1,0 +1,41 @@
+@use "./variables" as v;
+
+.detailContainer {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 1;
+    .detailRibbon {
+        width: 400px;
+        height: 100%;
+        padding: 25px;
+        border-right: solid 2px v.$blue;
+        h2 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+        li {
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+    .detail {
+        width: calc(100% - 300px);
+        height: 100%;
+        padding: 25px;
+        .detailTopRibbon {
+            button{
+                width: 200px;
+                margin: 0px 5px;
+            }
+            .addSection{
+                margin-right: auto;
+            }
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

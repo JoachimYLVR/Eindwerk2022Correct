@@ -1,0 +1,26 @@
+@use "./variables" as v;
+
+.RewindList {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .Comment {
+        div {
+            border: solid 1px v.$blue;
+            border-radius: 15px;
+            padding: 5px 10px;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            margin-bottom: 16px;
+        }  
+    }
+    .cancel {
+        position: absolute;
+        bottom: 40px;
+    }
+}
